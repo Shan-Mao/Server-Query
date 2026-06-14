@@ -1,0 +1,22 @@
+<local:MyCard Title="🌐 Minecraft 服务器状态查询" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Theme="Blue" Text="通过 uapis.cn API 实时查询 Minecraft 服务器在线状态、玩家数、MOTD 等信息。&#xA;在弹出窗口中填写服务器地址即可自动保存，下次打开自动查询。" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,8,0,0">
+            <local:MyButton Margin="0,0,10,0" Height="38" Padding="22,0,22,0" ColorType="Highlight"
+                       Text="🔍 查询服务器状态" EventType="打开文件"
+                       EventData="Server Query\mc-launcher.vbs"
+                       ToolTip="启动查询工具 → 自动加载配置 → 自动查询 → 直接显示结果" />
+            <local:MyButton Margin="0,0,10,0" Height="38" Padding="16,0,16,0"
+                       Text="🔑 获取 API 密钥" EventType="打开网页"
+                       EventData="https://uapis.cn/console/api-keys"
+                       ToolTip="在浏览器中打开 uapis.cn 密钥管理页" />
+            <local:MyButton Margin="0,0,10,0" Height="38" Padding="16,0,16,0" ColorType="Red"
+                       Text="🔄 初始化配置" EventType="打开文件"
+                       EventData="Server Query\mc-reset.vbs"
+                       ToolTip="删除已保存的配置，下次查询恢复为默认服务器地址和密钥" />
+        </StackPanel>
+
+        <local:MyHint Theme="Yellow" Text="💡 使用说明：&#xA;1. 点「查询」→ 无边框窗口弹出 → 输入服务器地址和密钥 → 自动保存&#xA;2. 之后每次打开自动填充并自动查询，1 秒出结果&#xA;3. 点「初始化配置」可清空已保存的配置，恢复默认&#xA;4. 返回数据：在线状态、玩家数/最大人数、MOTD、版本、IP、玩家列表" />
+    </StackPanel>
+</local:MyCard>
