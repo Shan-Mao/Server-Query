@@ -1,6 +1,6 @@
 <local:MyCard Title="🌐 Minecraft 服务器状态查询" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
     <StackPanel Margin="25,40,23,15">
-        <local:MyHint Theme="Blue" Text="通过 uapis.cn API 实时查询 Minecraft 服务器在线状态、玩家数、MOTD 等信息。&#xA;在弹出窗口中填写服务器地址即可自动保存，下次打开自动查询。" />
+        <local:MyHint Theme="Blue" Text="通过 uapis.cn API 实时查询 Minecraft 服务器在线状态、玩家数、MOTD 等信息。&#xA;在弹出窗口中填写服务器地址即可自动保存，下次打开自动查询。&#xA;无需添加API密钥也可查询，只是每月查询次数有上限（游客赠送1500积分；api每月赠送3500，每次查询1积分）。" />
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,8,0,0">
             <local:MyButton Margin="0,0,10,0" Height="38" Padding="22,0,22,0" ColorType="Highlight"
